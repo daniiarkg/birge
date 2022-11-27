@@ -1,0 +1,18 @@
+{% load static %}   
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Бирге</title>
+    <link rel="icon" type="image/png" href="{% static 'main/img/herb.png' %}" />
+    <link rel="stylesheet" href="{% static 'main/css/style.css' %}">
+  </head>
+  <body>
+    <main>
+        {% csrf_token %}
+        {{ search_pet }}
+        {% block content %}
+        {% endblock %}
+    </main>
+  </body>
+</html>
