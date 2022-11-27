@@ -14,6 +14,12 @@ class PetitionForm(ModelForm):
         fields = ['title', 'text']
 
 
+class CommentForm(ModelForm):
+    class Meta:
+        model = Comment
+        fields = ['text']
+
+
 class UserLogForm(forms.Form):
     username = forms.CharField(label='Имя пользователя', max_length=40)
     password = forms.CharField(

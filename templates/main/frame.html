@@ -9,8 +9,11 @@
   </head>
   <body>
     <main>
+        <form action="{% url 'searchres' %}" method="post">
         {% csrf_token %}
-        {{ search_pet }}
+        {{ search_form }}
+        <input type="submit" value="Поиск">
+        </form>
         {% block content %}
         {% endblock %}
     </main>

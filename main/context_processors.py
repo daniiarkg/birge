@@ -1,4 +1,4 @@
-from .forms import PetitionSearcForm
+from .forms import PetitionSearchForm
 
 
 def search_pet(request):

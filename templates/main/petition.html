@@ -1,4 +1,10 @@
 {% extends 'main/frame.html' %}
 {% block content %}
 {{ pet.title }}
+{{ form.as_p }}
+{% for i in com %}
+{{i.author}}
+{{i.text}}
+{{i.time}}
+{% endfor %}
 {% endblock %}

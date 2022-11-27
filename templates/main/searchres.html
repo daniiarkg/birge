@@ -1,5 +1,6 @@
 {% extends 'main/frame.html' %}
 {% block content %}
 {% for i in pets %}
+<a href="{% url 'petition' i.id %}">{{i.title}}</a>
 {% endfor %}
 {% endblock %}
